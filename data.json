@@ -1,0 +1,174 @@
+{
+  "departments": {
+    "CMPE": {
+      "name": "Computer Engineering",
+      "curriculum_versions": [
+        {
+          "effective_year": 2020,
+          "valid_until": 2022,
+          "courses": [
+            {
+              "semester": 1,
+              "required_courses": [
+                {"code": "GPC100", "name": "General Psychology", "credits": 3, "type": "must"},
+                {"code": "MAT101", "name": "Calculus I", "credits": 4, "type": "must"},
+                {"code": "PHY101", "name": "Physics I", "credits": 4, "type": "must"},
+                {"code": "CS101", "name": "Introduction to Programming", "credits": 4, "type": "must"},
+                {"code": "ENG101", "name": "English I", "credits": 3, "type": "must"}
+              ]
+            },
+            {
+              "semester": 2,
+              "required_courses": [
+                {"code": "PSY102", "name": "Developmental Psychology", "credits": 3, "type": "must"},
+                {"code": "MAT102", "name": "Calculus II", "credits": 4, "type": "must"},
+                {"code": "PHY102", "name": "Physics II", "credits": 4, "type": "must"},
+                {"code": "CS102", "name": "Object Oriented Programming", "credits": 4, "type": "must"}
+              ]
+            }
+          ]
+        },
+        {
+          "effective_year": 2023,
+          "valid_until": null,
+          "courses": [
+            {
+              "semester": 1,
+              "required_courses": [
+                {"code": "BUS100", "name": "Introduction to Business", "credits": 3, "type": "must"},
+                {"code": "MAT101", "name": "Calculus I", "credits": 4, "type": "must"},
+                {"code": "PHY101", "name": "Physics I", "credits": 4, "type": "must"},
+                {"code": "CS101", "name": "Introduction to Programming", "credits": 4, "type": "must"},
+                {"code": "ENG101", "name": "English I", "credits": 3, "type": "must"}
+              ]
+            },
+            {
+              "semester": 2,
+              "required_courses": [
+                {"code": "ECON101", "name": "Introduction to Economics", "credits": 3, "type": "must"},
+                {"code": "MAT102", "name": "Calculus II", "credits": 4, "type": "must"},
+                {"code": "PHY102", "name": "Physics II", "credits": 4, "type": "must"},
+                {"code": "CS102", "name": "Object Oriented Programming", "credits": 4, "type": "must"}
+              ]
+            }
+          ]
+        }
+      ],
+      "course_substitutions": [
+        {
+          "old_course": "GPC100",
+          "new_course": "BUS100",
+          "effective_year": 2023,
+          "note": "Psychology requirement replaced with business course"
+        },
+        {
+          "old_course": "PSY102",
+          "new_course": "ECON101",
+          "effective_year": 2023,
+          "note": "Second psychology course replaced with economics"
+        }
+      ]
+    },
+    "SE": {
+      "name": "Software Engineering",
+      "curriculum_versions": [
+        {
+          "effective_year": 2021,
+          "valid_until": 2023,
+          "courses": [
+            {
+              "semester": 1,
+              "required_courses": [
+                {"code": "SE100", "name": "Introduction to Software Engineering", "credits": 3, "type": "must"},
+                {"code": "MAT101", "name": "Calculus I", "credits": 4, "type": "must"},
+                {"code": "CS101", "name": "Introduction to Programming", "credits": 4, "type": "must"},
+                {"code": "PHIL101", "name": "Introduction to Philosophy", "credits": 3, "type": "must"}
+              ]
+            }
+          ]
+        },
+        {
+          "effective_year": 2024,
+          "valid_until": null,
+          "courses": [
+            {
+              "semester": 1,
+              "required_courses": [
+                {"code": "SE100", "name": "Introduction to Software Engineering", "credits": 3, "type": "must"},
+                {"code": "MAT101", "name": "Calculus I", "credits": 4, "type": "must"},
+                {"code": "CS101", "name": "Introduction to Programming", "credits": 4, "type": "must"},
+                {"code": "ETHICS100", "name": "Ethics in Technology", "credits": 3, "type": "must"}
+              ]
+            }
+          ]
+        }
+      ],
+      "course_substitutions": [
+        {
+          "old_course": "PHIL101",
+          "new_course": "ETHICS100",
+          "effective_year": 2024,
+          "note": "Philosophy replaced with technology ethics"
+        }
+      ]
+    }
+  },
+  "students": [
+    {
+      "student_id": "20221001",
+      "name": "Mehmet Öz",
+      "department": "CMPE",
+      "start_year": 2022,
+      "curriculum_version": "2020-2022",
+      "semesters": [
+        {
+          "name": "Fall 2022-2023",
+          "courses": [
+            {"code": "GPC100", "name": "General Psychology", "grade": "BB", "credits": 3},
+            {"code": "MAT101", "name": "Calculus I", "grade": "CC", "credits": 4},
+            {"code": "PHY101", "name": "Physics I", "grade": "CB", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "BA", "credits": 4},
+            {"code": "ENG101", "name": "English I", "grade": "AA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2022-2023",
+          "courses": [
+            {"code": "PSY102", "name": "Developmental Psychology", "grade": "CC", "credits": 3},
+            {"code": "MAT102", "name": "Calculus II", "grade": "DC", "credits": 4},
+            {"code": "PHY102", "name": "Physics II", "grade": "CC", "credits": 4},
+            {"code": "CS102", "name": "Object Oriented Programming", "grade": "BB", "credits": 4}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "20231001",
+      "name": "Zeynep Kaya",
+      "department": "CMPE",
+      "start_year": 2023,
+      "curriculum_version": "2023-current",
+      "semesters": [
+        {
+          "name": "Fall 2023-2024",
+          "courses": [
+            {"code": "BUS100", "name": "Introduction to Business", "grade": "BB", "credits": 3},
+            {"code": "MAT101", "name": "Calculus I", "grade": "CC", "credits": 4},
+            {"code": "PHY101", "name": "Physics I", "grade": "CB", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "BA", "credits": 4},
+            {"code": "ENG101", "name": "English I", "grade": "AA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2023-2024",
+          "courses": [
+            {"code": "ECON101", "name": "Introduction to Economics", "grade": "CC", "credits": 3},
+            {"code": "MAT102", "name": "Calculus II", "grade": "DC", "credits": 4},
+            {"code": "PHY102", "name": "Physics II", "grade": "CC", "credits": 4},
+            {"code": "CS102", "name": "Object Oriented Programming", "grade": "BB", "credits": 4}
+          ]
+        }
+      ]
+    }
+  ]
+}
