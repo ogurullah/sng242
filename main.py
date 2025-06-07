@@ -48,7 +48,7 @@ def get_department_by_id(department_id):
     return None
 
 get_department_by_id("389")
-get_department_by_id(389)  # Example with integer input
+get_department_by_id(355)  # Example with integer input
 get_department_by_id("999")  # Example with non-existent ID
 
         
