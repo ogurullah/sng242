@@ -23,16 +23,32 @@ with open('data.json', 'r') as file:
 def get_student_by_id(student_id):
     for student in data["students"]:
         if student["student_id"] == student_id:
-            #print(f"Found student: {student['name']}")
+            print(f"Found student: {student['name']}")
             return student
-    #print("Student not found.")
+    print("Student not found.")
     return None
 
-get_student_by_id("20221001")
+get_student_by_id("20241001")
 
-#add department ids to database and then implement a function to get department by id
-#def get_department_by_id(department_id):
-#    for department in data["departments"]:
-#        if department["department_id"] == department_id:
-#            print(f"Found department: {department['name']}")
-#            return department
+
+def get_department_by_id(department_id):
+    for department in data["departments"].values():
+
+        # Assuming department_id is a string, adjust if necessary
+        if isinstance(department_id, int):
+            department_id = str(department_id)
+        elif not isinstance(department_id, str):
+            print("Invalid department_id type. Must be a string or convertible to string.")
+            return None
+        
+        if department["department_id"] == department_id:
+            print(f"Found department: {department['name']}")
+            return department
+    print("Department not found.")
+    return None
+
+get_department_by_id("389")
+get_department_by_id(389)  # Example with integer input
+get_department_by_id("999")  # Example with non-existent ID
+
+        
