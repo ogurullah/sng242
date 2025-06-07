@@ -55,8 +55,8 @@ python main.py
 | Week | Goals |
 |------|-------|
 | 1    | Team setup, tech stack, build database, implement functions |
-| 2    | GPA/CGPA engine, CLI commands, PDF output generation |
-| 3    | Bug fixes, edge case tests, polishing, finalization |
+| 2    | GPA/CGPA engine, CLI commands, PDF output generation        |
+| 3    | Bug fixes, edge case tests, polishing, finalization         |
 
 ---
 
