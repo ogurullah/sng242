@@ -1,5 +1,5 @@
 
-# Transcript Management System (CLI-Based)
+# Transcript Generator (CLI-Based)
 
 A lightweight command-line tool to generate university transcripts for students, designed with versioned curriculum support and GPA/CGPA calculations. Built for GNU/Linux platforms.
 
