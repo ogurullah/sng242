@@ -3,40 +3,83 @@ import os
 from collections import defaultdict
 from fpdf import FPDF
 
-GRADE_POINTS = {
+# Will be used to convert letter grades to point grades
+GRADINGS = {
     "AA": 4.0, "BA": 3.5, "BB": 3.0, "CB": 2.5, "CC": 2.0,
     "DC": 1.5, "DD": 1.0, "FD": 0.5, "FF": 0.0, "NA": 0.0,
 }
 
+# Will be used to exclude certain grades from GPA/CGPA calculations
 EXCLUDED_GRADES = {"EX", "W", "I"}
 
+# Load data from our database file
 def load_data(file_path="data.json"):
     with open(file_path, "r", encoding="utf-8") as f:
         return json.load(f)
-
+    
 def calculate_gpa(semester_courses):
-    total_points = 0.0
-    total_credits = 0
+
+    total_points = 0.0  # float
+    total_credits = 0   # int
+
     for course in semester_courses:
         grade = course["grade"]
         if grade in EXCLUDED_GRADES:
-            continue
-        points = GRADE_POINTS.get(grade, 0)
+            continue  # Skip excluded grades
+
+        # Convert letter grade to point grade
+        points = GRADINGS.get(grade, 0)
+        # 0 is for any unrecognized grade
+
         credits = course["credits"]
         total_points += points * credits
         total_credits += credits
-    return round(total_points / total_credits, 2) if total_credits > 0 else 0.0
+
+    # Calculate GPA only if there are credits
+    if total_credits > 0:
+        gpa = total_points / total_credits
+        return round(gpa, 2)
+    else:
+        return 0.0
 
 def calculate_cgpa(semesters):
+    # Dictionary for storing the latest grade for each course
+    # Since a course can be taken multiple times, we need to keep track of the latest valid grade 
     latest_grades = {}
+
+    # Go through each semester and collect the latest valid grade for each course
+    # This will overwrite any previous grades for the same course code because loop goes over courses in chronological order
     for semester in semesters:
         for course in semester["courses"]:
+            grade = course["grade"]
             code = course["code"]
-            if course["grade"] not in EXCLUDED_GRADES:
-                latest_grades[code] = course
-    total_points = sum(GRADE_POINTS[c["grade"]] * c["credits"] for c in latest_grades.values())
-    total_credits = sum(c["credits"] for c in latest_grades.values())
-    return round(total_points / total_credits, 2) if total_credits > 0 else 0.0
+
+            if grade in EXCLUDED_GRADES: #Skip excluded grades
+                continue
+
+            # Update the latest grade (overwrites if course was taken before)
+            latest_grades[code] = course
+
+    total_points = 0.0 #float
+    total_credits = 0 #int
+
+    for course in latest_grades.values():
+        grade = course["grade"]
+        credits = course["credits"]
+
+        # Convert letter grade to point grade
+        points = GRADINGS.get(grade, 0)
+        # 0 is for any unrecognized grade
+
+        total_points += points * credits
+        total_credits += credits
+
+    # Final CGPA calculation
+    if total_credits > 0:
+        cgpa = total_points / total_credits
+        return round(cgpa, 2)
+    else:
+        return 0.0
 
 def generate_pdf(student, gpa_data, cgpa, output_dir="transcripts"):
     os.makedirs(output_dir, exist_ok=True)
@@ -69,10 +112,10 @@ def generate_transcript(student):
 
 def main():
     data = load_data()
-    print("Transcript Generator")
-    print("1. Generate transcript for a specific student")
-    print("2. Generate transcripts for a department")
-    print("3. Generate transcripts for all students")
+    print("----- Transcript Generator -----")
+    print("1. Generate transcript for a student with ID:")
+    print("2. Generate transcripts for a departments all students:")
+    print("3. Generate transcripts for all students in the university:")
     choice = input("Enter your choice (1/2/3): ")
 
     if choice == "1":
