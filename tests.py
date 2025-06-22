@@ -2,7 +2,6 @@ import unittest
 from main import calculate_gpa, calculate_cgpa
 
 class TestTranscriptFunctions(unittest.TestCase):
-
     def test_gpa_calculation(self):
         # AA and BB -> should average around 3.43
         courses = [
@@ -60,7 +59,7 @@ class TestTranscriptFunctions(unittest.TestCase):
         self.assertAlmostEqual(calculate_cgpa(semesters), 3.0, places=2)
 
     def test_cgpa_calculation_repeated_courses(self):
-        # FF first, BB later -> BB should count
+        # BB should overwrite FF
         semesters = [
             {'name': 'Fall', 'courses': [
                 {'code': 'CS101', 'name': 'Intro', 'grade': 'FF', 'credits': 4}
