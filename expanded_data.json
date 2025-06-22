@@ -1,0 +1,1340 @@
+{
+  "departments": {
+    "CMPE": {
+      "name": "Computer Engineering",
+      "department_id": "355",
+      "curriculum_versions": [
+        {
+          "effective_year": 2018,
+          "valid_until": 2020,
+          "courses": [
+            {
+              "semester": 1,
+              "required_courses": [
+                {"code": "MATH101", "name": "Calculus I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "PHY101", "name": "Physics I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "CS101", "name": "Introduction to Programming", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": []},
+                {"code": "ENG101", "name": "English I", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []},
+                {"code": "HIST101", "name": "History of Civilization", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            },
+            {
+              "semester": 2,
+              "required_courses": [
+                {"code": "MATH102", "name": "Calculus II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["MATH101"]},
+                {"code": "PHY102", "name": "Physics II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["PHY101"]},
+                {"code": "CS102", "name": "Object Oriented Programming", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["CS101"]},
+                {"code": "ENG102", "name": "English II", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": ["ENG101"]},
+                {"code": "PHIL101", "name": "Introduction to Philosophy", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            },
+            {
+              "semester": 3,
+              "required_courses": [
+                {"code": "MATH201", "name": "Linear Algebra", "credits": 3, "ects": 5.0, "type": "must", "prerequisites": ["MATH102"]},
+                {"code": "CS201", "name": "Data Structures", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["CS102"]},
+                {"code": "CS203", "name": "Digital Logic Design", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": []},
+                {"code": "MATH203", "name": "Discrete Mathematics", "credits": 3, "ects": 5.0, "type": "must", "prerequisites": ["MATH101"]},
+                {"code": "TURK201", "name": "Turkish Language I", "credits": 2, "ects": 3.0, "type": "must", "prerequisites": []}
+              ]
+            },
+            {
+              "semester": 4,
+              "required_courses": [
+                {"code": "CS202", "name": "Algorithms", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["CS201"]},
+                {"code": "CS204", "name": "Computer Architecture", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["CS203"]},
+                {"code": "MATH204", "name": "Probability and Statistics", "credits": 3, "ects": 5.0, "type": "must", "prerequisites": ["MATH201"]},
+                {"code": "EE201", "name": "Circuit Analysis", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["PHY102"]},
+                {"code": "TURK202", "name": "Turkish Language II", "credits": 2, "ects": 3.0, "type": "must", "prerequisites": ["TURK201"]}
+              ]
+            },
+            {
+              "semester": 5,
+              "required_courses": [
+                {"code": "CS301", "name": "Database Systems", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["CS202"]},
+                {"code": "CS303", "name": "Operating Systems", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["CS204"]},
+                {"code": "CS305", "name": "Computer Networks", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["CS204"]},
+                {"code": "ELEC301", "name": "Elective Course I", "credits": 3, "ects": 5.0, "type": "elective", "prerequisites": []}
+              ]
+            },
+            {
+              "semester": 6,
+              "required_courses": [
+                {"code": "CS302", "name": "Software Engineering", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["CS301"]},
+                {"code": "CS304", "name": "Compiler Design", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["CS202"]},
+                {"code": "CS306", "name": "Machine Learning", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["MATH204"]},
+                {"code": "ELEC302", "name": "Elective Course II", "credits": 3, "ects": 5.0, "type": "elective", "prerequisites": []}
+              ]
+            },
+            {
+              "semester": 7,
+              "required_courses": [
+                {"code": "CS401", "name": "Capstone Project I", "credits": 4, "ects": 8.0, "type": "must", "prerequisites": ["CS302"]},
+                {"code": "ELEC401", "name": "Elective Course III", "credits": 3, "ects": 5.0, "type": "elective", "prerequisites": []},
+                {"code": "ELEC402", "name": "Elective Course IV", "credits": 3, "ects": 5.0, "type": "elective", "prerequisites": []},
+                {"code": "ELEC403", "name": "Elective Course V", "credits": 3, "ects": 5.0, "type": "elective", "prerequisites": []}
+              ]
+            },
+            {
+              "semester": 8,
+              "required_courses": [
+                {"code": "CS402", "name": "Capstone Project II", "credits": 4, "ects": 8.0, "type": "must", "prerequisites": ["CS401"]},
+                {"code": "ELEC404", "name": "Elective Course VI", "credits": 3, "ects": 5.0, "type": "elective", "prerequisites": []},
+                {"code": "ELEC405", "name": "Elective Course VII", "credits": 3, "ects": 5.0, "type": "elective", "prerequisites": []},
+                {"code": "INTERN401", "name": "Industrial Training", "credits": 0, "ects": 8.0, "type": "must", "prerequisites": []}
+              ]
+            }
+          ]
+        },
+        {
+          "effective_year": 2020,
+          "valid_until": 2022,
+          "courses": [
+            {
+              "semester": 1,
+              "required_courses": [
+                {"code": "GPC100", "name": "General Psychology", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []},
+                {"code": "MAT101", "name": "Calculus I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "PHY101", "name": "Physics I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "CS101", "name": "Introduction to Programming", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": []},
+                {"code": "ENG101", "name": "English I", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            },
+            {
+              "semester": 2,
+              "required_courses": [
+                {"code": "PSY102", "name": "Developmental Psychology", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []},
+                {"code": "MAT102", "name": "Calculus II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["MAT101"]},
+                {"code": "PHY102", "name": "Physics II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["PHY101"]},
+                {"code": "CS102", "name": "Object Oriented Programming", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["CS101"]}
+              ]
+            }
+          ]
+        },
+        {
+          "effective_year": 2023,
+          "valid_until": null,
+          "courses": [
+            {
+              "semester": 1,
+              "required_courses": [
+                {"code": "BUS100", "name": "Introduction to Business", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []},
+                {"code": "MAT101", "name": "Calculus I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "PHY101", "name": "Physics I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "CS101", "name": "Introduction to Programming", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": []},
+                {"code": "ENG101", "name": "English I", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            },
+            {
+              "semester": 2,
+              "required_courses": [
+                {"code": "ECON101", "name": "Introduction to Economics", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []},
+                {"code": "MAT102", "name": "Calculus II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["MAT101"]},
+                {"code": "PHY102", "name": "Physics II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["PHY101"]},
+                {"code": "CS102", "name": "Object Oriented Programming", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["CS101"]}
+              ]
+            }
+          ]
+        }
+      ],
+      "course_substitutions": [
+        {
+          "old_course": "HIST101",
+          "new_course": "GPC100",
+          "effective_year": 2020,
+          "note": "History course replaced with psychology"
+        },
+        {
+          "old_course": "PHIL101",
+          "new_course": "PSY102",
+          "effective_year": 2020,
+          "note": "Philosophy course replaced with developmental psychology"
+        },
+        {
+          "old_course": "GPC100",
+          "new_course": "BUS100",
+          "effective_year": 2023,
+          "note": "Psychology requirement replaced with business course"
+        },
+        {
+          "old_course": "PSY102",
+          "new_course": "ECON101",
+          "effective_year": 2023,
+          "note": "Second psychology course replaced with economics"
+        }
+      ]
+    },
+    "SE": {
+      "name": "Software Engineering",
+      "department_id": "389",
+      "curriculum_versions": [
+        {
+          "effective_year": 2019,
+          "valid_until": 2021,
+          "courses": [
+            {
+              "semester": 1,
+              "required_courses": [
+                {"code": "SE100", "name": "Introduction to Software Engineering", "credits": 3, "ects": 5.0, "type": "must", "prerequisites": []},
+                {"code": "MAT101", "name": "Calculus I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "CS101", "name": "Introduction to Programming", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": []},
+                {"code": "ENG101", "name": "English I", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []},
+                {"code": "HIST101", "name": "History of Civilization", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            },
+            {
+              "semester": 2,
+              "required_courses": [
+                {"code": "SE102", "name": "Software Development Fundamentals", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["SE100"]},
+                {"code": "MAT102", "name": "Calculus II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["MAT101"]},
+                {"code": "CS102", "name": "Object Oriented Programming", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["CS101"]},
+                {"code": "ENG102", "name": "English II", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": ["ENG101"]},
+                {"code": "PHIL101", "name": "Introduction to Philosophy", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            }
+          ]
+        },
+        {
+          "effective_year": 2021,
+          "valid_until": 2023,
+          "courses": [
+            {
+              "semester": 1,
+              "required_courses": [
+                {"code": "SE100", "name": "Introduction to Software Engineering", "credits": 3, "ects": 5.0, "type": "must", "prerequisites": []},
+                {"code": "MAT101", "name": "Calculus I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "CS101", "name": "Introduction to Programming", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": []},
+                {"code": "PHIL101", "name": "Introduction to Philosophy", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            },
+            {
+              "semester": 2,
+              "required_courses": [
+                {"code": "SE102", "name": "Programming Fundamentals", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["SE100"]},
+                {"code": "MAT102", "name": "Calculus II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["MAT101"]},
+                {"code": "CS102", "name": "Object Oriented Programming", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["CS101"]},
+                {"code": "ENG101", "name": "English I", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            }
+          ]
+        },
+        {
+          "effective_year": 2024,
+          "valid_until": null,
+          "courses": [
+            {
+              "semester": 1,
+              "required_courses": [
+                {"code": "SE100", "name": "Introduction to Software Engineering", "credits": 3, "ects": 5.0, "type": "must", "prerequisites": []},
+                {"code": "MAT101", "name": "Calculus I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "CS101", "name": "Introduction to Programming", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": []},
+                {"code": "ETHICS100", "name": "Ethics in Technology", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            },
+            {
+              "semester": 2,
+              "required_courses": [
+                {"code": "SE102", "name": "Advanced Programming", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["SE100"]},
+                {"code": "MAT102", "name": "Calculus II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["MAT101"]},
+                {"code": "CS102", "name": "Object Oriented Programming", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": ["CS101"]},
+                {"code": "ENG101", "name": "Academic English", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            }
+          ]
+        }
+      ],
+      "course_substitutions": [
+        {
+          "old_course": "HIST101",
+          "new_course": "ENG101",
+          "effective_year": 2021,
+          "note": "History course replaced with English"
+        },
+        {
+          "old_course": "PHIL101",
+          "new_course": "ETHICS100",
+          "effective_year": 2024,
+          "note": "Philosophy replaced with technology ethics"
+        }
+      ]
+    },
+    "EE": {
+      "name": "Electrical Engineering",
+      "department_id": "293",
+      "curriculum_versions": [
+        {
+          "effective_year": 2018,
+          "valid_until": 2020,
+          "courses": [
+            {
+              "semester": 1,
+              "required_courses": [
+                {"code": "MAT101", "name": "Calculus I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "PHY101", "name": "Physics I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "CHM101", "name": "General Chemistry", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": []},
+                {"code": "ENG101", "name": "English I", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []},
+                {"code": "HIST101", "name": "History of Civilization", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            },
+            {
+              "semester": 2,
+              "required_courses": [
+                {"code": "MAT102", "name": "Calculus II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["MAT101"]},
+                {"code": "PHY102", "name": "Physics II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["PHY101"]},
+                {"code": "EE102", "name": "Introduction to Electrical Engineering", "credits": 3, "ects": 5.0, "type": "must", "prerequisites": []},
+                {"code": "ENG102", "name": "English II", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": ["ENG101"]},
+                {"code": "PHIL101", "name": "Introduction to Philosophy", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            }
+          ]
+        },
+        {
+          "effective_year": 2020,
+          "valid_until": 2022,
+          "courses": [
+            {
+              "semester": 1,
+              "required_courses": [
+                {"code": "MAT101", "name": "Calculus I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "PHY101", "name": "Physics I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "CHM101", "name": "General Chemistry", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": []},
+                {"code": "ENG101", "name": "English I", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []},
+                {"code": "SOC101", "name": "Introduction to Sociology", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            },
+            {
+              "semester": 2,
+              "required_courses": [
+                {"code": "MAT102", "name": "Calculus II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["MAT101"]},
+                {"code": "PHY102", "name": "Physics II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["PHY101"]},
+                {"code": "EE102", "name": "Introduction to Electrical Engineering", "credits": 3, "ects": 5.0, "type": "must", "prerequisites": []},
+                {"code": "ENG102", "name": "English II", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": ["ENG101"]},
+                {"code": "PSY101", "name": "Introduction to Psychology", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            }
+          ]
+        },
+        {
+          "effective_year": 2023,
+          "valid_until": null,
+          "courses": [
+            {
+              "semester": 1,
+              "required_courses": [
+                {"code": "MAT101", "name": "Calculus I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "PHY101", "name": "Physics I", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": []},
+                {"code": "CHM101", "name": "General Chemistry", "credits": 4, "ects": 6.0, "type": "must", "prerequisites": []},
+                {"code": "ENG101", "name": "Academic English I", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []},
+                {"code": "ECON101", "name": "Introduction to Economics", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            },
+            {
+              "semester": 2,
+              "required_courses": [
+                {"code": "MAT102", "name": "Calculus II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["MAT101"]},
+                {"code": "PHY102", "name": "Physics II", "credits": 4, "ects": 6.5, "type": "must", "prerequisites": ["PHY101"]},
+                {"code": "EE102", "name": "Fundamentals of Electrical Engineering", "credits": 3, "ects": 5.0, "type": "must", "prerequisites": []},
+                {"code": "ENG102", "name": "Academic English II", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": ["ENG101"]},
+                {"code": "BUS101", "name": "Introduction to Business", "credits": 3, "ects": 4.5, "type": "must", "prerequisites": []}
+              ]
+            }
+          ]
+        }
+      ],
+      "course_substitutions": [
+        {
+          "old_course": "HIST101",
+          "new_course": "SOC101",
+          "effective_year": 2020,
+          "note": "History course replaced with sociology"
+        },
+        {
+          "old_course": "PHIL101",
+          "new_course": "PSY101",
+          "effective_year": 2020,
+          "note": "Philosophy course replaced with psychology"
+        },
+        {
+          "old_course": "SOC101",
+          "new_course": "ECON101",
+          "effective_year": 2023,
+          "note": "Sociology course replaced with economics"
+        },
+        {
+          "old_course": "PSY101",
+          "new_course": "BUS101",
+          "effective_year": 2023,
+          "note": "Psychology course replaced with business"
+        }
+      ]
+    }
+  },
+  "students": [
+    {
+      "student_id": "20181001",
+      "name": "Ahmet Yılmaz",
+      "department": "CMPE",
+      "start_year": 2018,
+      "curriculum_version": "2018-2020",
+      "status": "graduated",
+      "graduation_year": 2023,
+      "semesters": [
+        {
+          "name": "Fall 2018-2019",
+          "courses": [
+            {"code": "MATH101", "name": "Calculus I", "grade": "CB", "credits": 4},
+            {"code": "PHY101", "name": "Physics I", "grade": "CC", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "BB", "credits": 4},
+            {"code": "ENG101", "name": "English I", "grade": "BA", "credits": 3},
+            {"code": "HIST101", "name": "History of Civilization", "grade": "CB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2018-2019",
+          "courses": [
+            {"code": "MATH102", "name": "Calculus II", "grade": "DC", "credits": 4},
+            {"code": "PHY102", "name": "Physics II", "grade": "CC", "credits": 4},
+            {"code": "CS102", "name": "Object Oriented Programming", "grade": "BB", "credits": 4},
+            {"code": "ENG102", "name": "English II", "grade": "BA", "credits": 3},
+            {"code": "PHIL101", "name": "Introduction to Philosophy", "grade": "CB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2019-2020",
+          "courses": [
+            {"code": "MATH102", "name": "Calculus II", "grade": "CC", "credits": 4},
+            {"code": "MATH201", "name": "Linear Algebra", "grade": "CB", "credits": 3},
+            {"code": "CS201", "name": "Data Structures", "grade": "BB", "credits": 4},
+            {"code": "CS203", "name": "Digital Logic Design", "grade": "CB", "credits": 4},
+            {"code": "TURK201", "name": "Turkish Language I", "grade": "BA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Spring 2019-2020",
+          "courses": [
+            {"code": "MATH203", "name": "Discrete Mathematics", "grade": "BB", "credits": 3},
+            {"code": "CS202", "name": "Algorithms", "grade": "CB", "credits": 4},
+            {"code": "CS204", "name": "Computer Architecture", "grade": "CC", "credits": 4},
+            {"code": "MATH204", "name": "Probability and Statistics", "grade": "CB", "credits": 3},
+            {"code": "TURK202", "name": "Turkish Language II", "grade": "BA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Fall 2020-2021",
+          "courses": [
+            {"code": "EE201", "name": "Circuit Analysis", "grade": "CC", "credits": 4},
+            {"code": "CS301", "name": "Database Systems", "grade": "BB", "credits": 4},
+            {"code": "CS303", "name": "Operating Systems", "grade": "CB", "credits": 4},
+            {"code": "CS305", "name": "Computer Networks", "grade": "CC", "credits": 4}
+          ]
+        },
+        {
+          "name": "Spring 2020-2021",
+          "courses": [
+            {"code": "ELEC301", "name": "Elective Course I", "grade": "BB", "credits": 3},
+            {"code": "CS302", "name": "Software Engineering", "grade": "BA", "credits": 4},
+            {"code": "CS304", "name": "Compiler Design", "grade": "CB", "credits": 4},
+            {"code": "CS306", "name": "Machine Learning", "grade": "CC", "credits": 4}
+          ]
+        },
+        {
+          "name": "Fall 2021-2022",
+          "courses": [
+            {"code": "ELEC302", "name": "Elective Course II", "grade": "BB", "credits": 3},
+            {"code": "CS401", "name": "Capstone Project I", "grade": "BA", "credits": 4},
+            {"code": "ELEC401", "name": "Elective Course III", "grade": "CB", "credits": 3},
+            {"code": "ELEC402", "name": "Elective Course IV", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2021-2022",
+          "courses": [
+            {"code": "ELEC403", "name": "Elective Course V", "grade": "BB", "credits": 3},
+            {"code": "CS402", "name": "Capstone Project II", "grade": "BA", "credits": 4},
+            {"code": "ELEC404", "name": "Elective Course VI", "grade": "CB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2022-2023",
+          "courses": [
+            {"code": "ELEC405", "name": "Elective Course VII", "grade": "BB", "credits": 3},
+            {"code": "INTERN401", "name": "Industrial Training", "grade": "EX", "credits": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "20201001",
+      "name": "Zeynep Kaya",
+      "department": "CMPE",
+      "start_year": 2020,
+      "curriculum_version": "2020-2022",
+      "status": "active",
+      "semesters": [
+        {
+          "name": "Fall 2020-2021",
+          "courses": [
+            {"code": "GPC100", "name": "General Psychology", "grade": "BB", "credits": 3},
+            {"code": "MAT101", "name": "Calculus I", "grade": "CC", "credits": 4},
+            {"code": "PHY101", "name": "Physics I", "grade": "CB", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "BA", "credits": 4},
+            {"code": "ENG101", "name": "English I", "grade": "AA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2020-2021",
+          "courses": [
+            {"code": "PSY102", "name": "Developmental Psychology", "grade": "CC", "credits": 3},
+            {"code": "MAT102", "name": "Calculus II", "grade": "DC", "credits": 4},
+            {"code": "PHY102", "name": "Physics II", "grade": "CC", "credits": 4},
+            {"code": "CS102", "name": "Object Oriented Programming", "grade": "BB", "credits": 4}
+          ]
+        },
+        {
+          "name": "Fall 2021-2022",
+          "courses": [
+            {"code": "MAT102", "name": "Calculus II", "grade": "CC", "credits": 4},
+            {"code": "MAT201", "name": "Linear Algebra", "grade": "CB", "credits": 3},
+            {"code": "CS201", "name": "Data Structures", "grade": "BB", "credits": 4},
+            {"code": "CS203", "name": "Digital Logic Design", "grade": "CB", "credits": 4},
+            {"code": "TURK201", "name": "Turkish Language I", "grade": "BA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Spring 2021-2022",
+          "courses": [
+            {"code": "MATH203", "name": "Discrete Mathematics", "grade": "BB", "credits": 3},
+            {"code": "CS202", "name": "Algorithms", "grade": "CB", "credits": 4},
+            {"code": "CS204", "name": "Computer Architecture", "grade": "CC", "credits": 4},
+            {"code": "MATH204", "name": "Probability and Statistics", "grade": "CB", "credits": 3},
+            {"code": "TURK202", "name": "Turkish Language II", "grade": "BA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Fall 2022-2023",
+          "courses": [
+            {"code": "EE201", "name": "Circuit Analysis", "grade": "CC", "credits": 4},
+            {"code": "CS301", "name": "Database Systems", "grade": "BB", "credits": 4},
+            {"code": "CS303", "name": "Operating Systems", "grade": "CB", "credits": 4},
+            {"code": "CS305", "name": "Computer Networks", "grade": "CC", "credits": 4}
+          ]
+        },
+        {
+          "name": "Spring 2022-2023",
+          "courses": [
+            {"code": "ELEC301", "name": "Technical Elective I", "grade": "BB", "credits": 3},
+            {"code": "CS302", "name": "Software Engineering", "grade": "BA", "credits": 4},
+            {"code": "CS304", "name": "Compiler Design", "grade": "CB", "credits": 4},
+            {"code": "CS306", "name": "Artificial Intelligence", "grade": "CC", "credits": 4}
+          ]
+        },
+        {
+          "name": "Fall 2023-2024",
+          "courses": [
+            {"code": "ELEC302", "name": "Technical Elective II", "grade": "BB", "credits": 3},
+            {"code": "CS401", "name": "Senior Project I", "grade": "BA", "credits": 4},
+            {"code": "ELEC401", "name": "Technical Elective III", "grade": "CB", "credits": 3},
+            {"code": "ELEC402", "name": "Technical Elective IV", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2023-2024",
+          "courses": [
+            {"code": "ELEC403", "name": "Free Elective I", "grade": "BB", "credits": 3},
+            {"code": "CS402", "name": "Senior Project II", "grade": "BA", "credits": 4},
+            {"code": "ELEC404", "name": "Technical Elective V", "grade": "CB", "credits": 3},
+            {"code": "ELEC405", "name": "Free Elective II", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2024-2025",
+          "courses": [
+            {"code": "INTERN401", "name": "Summer Training", "grade": "EX", "credits": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "20231001",
+      "name": "Ali Demir",
+      "department": "CMPE",
+      "start_year": 2023,
+      "curriculum_version": "2023-current",
+      "status": "active",
+      "semesters": [
+        {
+          "name": "Fall 2023-2024",
+          "courses": [
+            {"code": "BUS100", "name": "Introduction to Business", "grade": "BB", "credits": 3},
+            {"code": "MAT101", "name": "Calculus I", "grade": "CC", "credits": 4},
+            {"code": "PHY101", "name": "Physics I", "grade": "CB", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "BA", "credits": 4},
+            {"code": "ENG101", "name": "English I", "grade": "AA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2023-2024",
+          "courses": [
+            {"code": "ECON101", "name": "Introduction to Economics", "grade": "CC", "credits": 3},
+            {"code": "MAT102", "name": "Calculus II", "grade": "DC", "credits": 4},
+            {"code": "PHY102", "name": "Physics II", "grade": "CC", "credits": 4},
+            {"code": "CS102", "name": "Object Oriented Programming", "grade": "BB", "credits": 4}
+          ]
+        },
+        {
+          "name": "Fall 2024-2025",
+          "courses": [
+            {"code": "MAT102", "name": "Calculus II", "grade": "CC", "credits": 4},
+            {"code": "MAT201", "name": "Linear Algebra", "grade": "CB", "credits": 3},
+            {"code": "CS201", "name": "Data Structures and Algorithms", "grade": "BB", "credits": 4},
+            {"code": "CS203", "name": "Digital Systems", "grade": "CB", "credits": 4},
+            {"code": "TURK201", "name": "Turkish Language I", "grade": "BA", "credits": 2}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "20181003",
+      "name": "Mehmet Özkan",
+      "department": "SE",
+      "start_year": 2018,
+      "curriculum_version": "2019-2021",
+      "status": "graduated",
+      "graduation_year": 2023,
+      "semesters": [
+        {
+          "name": "Fall 2018-2019",
+          "courses": [
+            {"code": "SE100", "name": "Introduction to Software Engineering", "grade": "BA", "credits": 3},
+            {"code": "MAT101", "name": "Calculus I", "grade": "BB", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "AA", "credits": 4},
+            {"code": "ENG101", "name": "English I", "grade": "BA", "credits": 3},
+            {"code": "HIST101", "name": "History of Civilization", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2018-2019",
+          "courses": [
+            {"code": "SE102", "name": "Software Development Fundamentals", "grade": "BA", "credits": 4},
+            {"code": "MAT102", "name": "Calculus II", "grade": "CB", "credits": 4},
+            {"code": "CS102", "name": "Object Oriented Programming", "grade": "AA", "credits": 4},
+            {"code": "ENG102", "name": "English II", "grade": "BA", "credits": 3},
+            {"code": "PHIL101", "name": "Introduction to Philosophy", "grade": "BB", "credits": 3}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "20211001",
+      "name": "Elif Şahin",
+      "department": "SE",
+      "start_year": 2021,
+      "curriculum_version": "2021-2023",
+      "status": "active",
+      "semesters": [
+        {
+          "name": "Fall 2021-2022",
+          "courses": [
+            {"code": "SE100", "name": "Introduction to Software Engineering", "grade": "BA", "credits": 3},
+            {"code": "MAT101", "name": "Calculus I", "grade": "BB", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "AA", "credits": 4},
+            {"code": "PHIL101", "name": "Introduction to Philosophy", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2021-2022",
+          "courses": [
+            {"code": "SE102", "name": "Programming Fundamentals", "grade": "BA", "credits": 4},
+            {"code": "MAT102", "name": "Calculus II", "grade": "CB", "credits": 4},
+            {"code": "CS102", "name": "Object Oriented Programming", "grade": "AA", "credits": 4},
+            {"code": "ENG101", "name": "English I", "grade": "BA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2022-2023",
+          "courses": [
+            {"code": "SE201", "name": "Data Structures", "grade": "BB", "credits": 4},
+            {"code": "SE203", "name": "Software Requirements Engineering", "grade": "BA", "credits": 3},
+            {"code": "MAT201", "name": "Linear Algebra", "grade": "CB", "credits": 3},
+            {"code": "MAT203", "name": "Discrete Mathematics", "grade": "BB", "credits": 3},
+            {"code": "TURK201", "name": "Turkish Language I", "grade": "AA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Spring 2022-2023",
+          "courses": [
+            {"code": "SE202", "name": "Algorithms", "grade": "BA", "credits": 4},
+            {"code": "SE204", "name": "Database Management Systems", "grade": "BB", "credits": 4},
+            {"code": "MAT204", "name": "Probability and Statistics", "grade": "CB", "credits": 3},
+            {"code": "CS204", "name": "Advanced Programming", "grade": "BB", "credits": 4},
+            {"code": "TURK202", "name": "Turkish Language II", "grade": "AA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Fall 2023-2024",
+          "courses": [
+            {"code": "SE301", "name": "Software Design Patterns", "grade": "BA", "credits": 4},
+            {"code": "SE303", "name": "Web Technologies", "grade": "AA", "credits": 4},
+            {"code": "SE305", "name": "Software Testing", "grade": "BB", "credits": 3},
+            {"code": "ELEC301", "name": "Technical Elective I", "grade": "BA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2023-2024",
+          "courses": [
+            {"code": "SE302", "name": "Software Engineering Process", "grade": "BA", "credits": 3},
+            {"code": "SE304", "name": "Mobile Software Development", "grade": "BA", "credits": 4},
+            {"code": "SE306", "name": "Network Programming", "grade": "BB", "credits": 4},
+            {"code": "ELEC302", "name": "Technical Elective II", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2024-2025",
+          "courses": [
+            {"code": "SE401", "name": "Capstone Project I", "grade": "AA", "credits": 4},
+            {"code": "ELEC401", "name": "Technical Elective III", "grade": "BA", "credits": 3},
+            {"code": "ELEC402", "name": "Technical Elective IV", "grade": "BB", "credits": 3},
+            {"code": "ELEC403", "name": "Free Elective I", "grade": "BA", "credits": 3}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "20241001",
+      "name": "Burak Yılmaz",
+      "department": "SE",
+      "start_year": 2024,
+      "curriculum_version": "2024-current",
+      "status": "active",
+      "semesters": [
+        {
+          "name": "Fall 2024-2025",
+          "courses": [
+            {"code": "SE100", "name": "Introduction to Software Engineering", "grade": "BB", "credits": 3},
+            {"code": "MAT101", "name": "Calculus I", "grade": "CC", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "BA", "credits": 4},
+            {"code": "ETHICS100", "name": "Ethics in Technology", "grade": "AA", "credits": 3}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "20181004",
+      "name": "Ayşe Demir",
+      "department": "EE",
+      "start_year": 2018,
+      "curriculum_version": "2018-2020",
+      "status": "graduated",
+      "graduation_year": 2022,
+      "semesters": [
+        {
+          "name": "Fall 2018-2019",
+          "courses": [
+            {"code": "MAT101", "name": "Calculus I", "grade": "BA", "credits": 4},
+            {"code": "PHY101", "name": "Physics I", "grade": "BB", "credits": 4},
+            {"code": "CHM101", "name": "General Chemistry", "grade": "CB", "credits": 4},
+            {"code": "ENG101", "name": "English I", "grade": "AA", "credits": 3},
+            {"code": "HIST101", "name": "History of Civilization", "grade": "BA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2018-2019",
+          "courses": [
+            {"code": "MAT102", "name": "Calculus II", "grade": "BB", "credits": 4},
+            {"code": "PHY102", "name": "Physics II", "grade": "CB", "credits": 4},
+            {"code": "EE102", "name": "Introduction to Electrical Engineering", "grade": "BA", "credits": 3},
+            {"code": "ENG102", "name": "English II", "grade": "AA", "credits": 3},
+            {"code": "PHIL101", "name": "Introduction to Philosophy", "grade": "BB", "credits": 3}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "20201002",
+      "name": "Murat Kılıç",
+      "department": "EE",
+      "start_year": 2020,
+      "curriculum_version": "2020-2022",
+      "status": "active",
+      "semesters": [
+        {
+          "name": "Fall 2020-2021",
+          "courses": [
+            {"code": "MAT101", "name": "Calculus I", "grade": "BB", "credits": 4},
+            {"code": "PHY101", "name": "Physics I", "grade": "CB", "credits": 4},
+            {"code": "CHM101", "name": "General Chemistry", "grade": "CC", "credits": 4},
+            {"code": "ENG101", "name": "English I", "grade": "BA", "credits": 3},
+            {"code": "SOC101", "name": "Introduction to Sociology", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2020-2021",
+          "courses": [
+            {"code": "MAT102", "name": "Calculus II", "grade": "CB", "credits": 4},
+            {"code": "PHY102", "name": "Physics II", "grade": "CC", "credits": 4},
+            {"code": "EE102", "name": "Introduction to Electrical Engineering", "grade": "BB", "credits": 3},
+            {"code": "ENG102", "name": "English II", "grade": "BA", "credits": 3},
+            {"code": "PSY101", "name": "Introduction to Psychology", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2021-2022",
+          "courses": [
+            {"code": "MAT201", "name": "Linear Algebra", "grade": "CB", "credits": 3},
+            {"code": "MAT203", "name": "Differential Equations", "grade": "CC", "credits": 3},
+            {"code": "EE201", "name": "Circuit Analysis I", "grade": "BB", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "BA", "credits": 4},
+            {"code": "TURK201", "name": "Turkish Language I", "grade": "AA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Spring 2021-2022",
+          "courses": [
+            {"code": "EE202", "name": "Circuit Analysis II", "grade": "CB", "credits": 4},
+            {"code": "EE204", "name": "Digital Systems", "grade": "CC", "credits": 4},
+            {"code": "MAT204", "name": "Probability and Statistics", "grade": "CB", "credits": 3},
+            {"code": "PHY301", "name": "Modern Physics", "grade": "BB", "credits": 3},
+            {"code": "TURK202", "name": "Turkish Language II", "grade": "AA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Fall 2022-2023",
+          "courses": [
+            {"code": "EE301", "name": "Electronics I", "grade": "BB", "credits": 4},
+            {"code": "EE303", "name": "Signals and Systems", "grade": "CB", "credits": 4},
+            {"code": "EE305", "name": "Electromagnetic Theory", "grade": "CC", "credits": 4},
+            {"code": "ELEC301", "name": "Area Elective I", "grade": "BA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2022-2023",
+          "courses": [
+            {"code": "EE302", "name": "Electronics II", "grade": "BB", "credits": 4},
+            {"code": "EE304", "name": "Automatic Control", "grade": "CB", "credits": 4},
+            {"code": "EE306", "name": "Electric Power Systems", "grade": "CC", "credits": 4},
+            {"code": "ELEC302", "name": "Area Elective II", "grade": "BA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2023-2024",
+          "courses": [
+            {"code": "EE401", "name": "Engineering Design I", "grade": "BA", "credits": 4},
+            {"code": "ELEC401", "name": "Area Elective III", "grade": "BB", "credits": 3},
+            {"code": "ELEC402", "name": "Area Elective IV", "grade": "CB", "credits": 3},
+            {"code": "ELEC403", "name": "Complementary Elective I", "grade": "BA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2023-2024",
+          "courses": [
+            {"code": "EE402", "name": "Engineering Design II", "grade": "BA", "credits": 4},
+            {"code": "ELEC404", "name": "Area Elective V", "grade": "BB", "credits": 3},
+            {"code": "ELEC405", "name": "Complementary Elective II", "grade": "CB", "credits": 3},
+            {"code": "INTERN401", "name": "Summer Training", "grade": "EX", "credits": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "20231002",
+      "name": "Selin Aydın",
+      "department": "EE",
+      "start_year": 2023,
+      "curriculum_version": "2023-current",
+      "status": "active",
+      "semesters": [
+        {
+          "name": "Fall 2023-2024",
+          "courses": [
+            {"code": "MAT101", "name": "Calculus I", "grade": "BB", "credits": 4},
+            {"code": "PHY101", "name": "Physics I", "grade": "CB", "credits": 4},
+            {"code": "CHM101", "name": "General Chemistry", "grade": "CC", "credits": 4},
+            {"code": "ENG101", "name": "Academic English I", "grade": "BA", "credits": 3},
+            {"code": "ECON101", "name": "Introduction to Economics", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2023-2024",
+          "courses": [
+            {"code": "MAT102", "name": "Calculus II", "grade": "CB", "credits": 4},
+            {"code": "PHY102", "name": "Physics II", "grade": "CC", "credits": 4},
+            {"code": "EE102", "name": "Fundamentals of Electrical Engineering", "grade": "BB", "credits": 3},
+            {"code": "ENG102", "name": "Academic English II", "grade": "BA", "credits": 3},
+            {"code": "BUS101", "name": "Introduction to Business", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2024-2025",
+          "courses": [
+            {"code": "MAT201", "name": "Linear Algebra", "grade": "CB", "credits": 3},
+            {"code": "MAT203", "name": "Differential Equations", "grade": "CC", "credits": 3},
+            {"code": "EE201", "name": "Circuit Analysis I", "grade": "BB", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "BA", "credits": 4},
+            {"code": "TURK201", "name": "Turkish Language I", "grade": "AA", "credits": 2}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "20181005",
+      "name": "Emre Çelik",
+      "department": "CMPE",
+      "start_year": 2018,
+      "curriculum_version": "2018-2020",
+      "status": "graduated",
+      "graduation_year": 2022,
+      "semesters": [
+        {
+          "name": "Fall 2018-2019",
+          "courses": [
+            {"code": "MATH101", "name": "Calculus I", "grade": "BA", "credits": 4},
+            {"code": "PHY101", "name": "Physics I", "grade": "BB", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "AA", "credits": 4},
+            {"code": "ENG101", "name": "English I", "grade": "BA", "credits": 3},
+            {"code": "HIST101", "name": "History of Civilization", "grade": "AA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2018-2019",
+          "courses": [
+            {"code": "MATH102", "name": "Calculus II", "grade": "BB", "credits": 4},
+            {"code": "PHY102", "name": "Physics II", "grade": "BA", "credits": 4},
+            {"code": "CS102", "name": "Object Oriented Programming", "grade": "AA", "credits": 4},
+            {"code": "ENG102", "name": "English II", "grade": "BA", "credits": 3},
+            {"code": "PHIL101", "name": "Introduction to Philosophy", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2019-2020",
+          "courses": [
+            {"code": "MATH201", "name": "Linear Algebra", "grade": "BA", "credits": 3},
+            {"code": "CS201", "name": "Data Structures", "grade": "AA", "credits": 4},
+            {"code": "CS203", "name": "Digital Logic Design", "grade": "BA", "credits": 4},
+            {"code": "MATH203", "name": "Discrete Mathematics", "grade": "BB", "credits": 3},
+            {"code": "TURK201", "name": "Turkish Language I", "grade": "AA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Spring 2019-2020",
+          "courses": [
+            {"code": "CS202", "name": "Algorithms", "grade": "AA", "credits": 4},
+            {"code": "CS204", "name": "Computer Architecture", "grade": "BA", "credits": 4},
+            {"code": "MATH204", "name": "Probability and Statistics", "grade": "BA", "credits": 3},
+            {"code": "EE201", "name": "Circuit Analysis", "grade": "BB", "credits": 4},
+            {"code": "TURK202", "name": "Turkish Language II", "grade": "AA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Fall 2020-2021",
+          "courses": [
+            {"code": "CS301", "name": "Database Systems", "grade": "AA", "credits": 4},
+            {"code": "CS303", "name": "Operating Systems", "grade": "BA", "credits": 4},
+            {"code": "CS305", "name": "Computer Networks", "grade": "BA", "credits": 4},
+            {"code": "ELEC301", "name": "Elective Course I", "grade": "AA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2020-2021",
+          "courses": [
+            {"code": "CS302", "name": "Software Engineering", "grade": "AA", "credits": 4},
+            {"code": "CS304", "name": "Compiler Design", "grade": "AA", "credits": 4},
+            {"code": "CS306", "name": "Machine Learning", "grade": "BA", "credits": 4},
+            {"code": "ELEC302", "name": "Elective Course II", "grade": "BA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2021-2022",
+          "courses": [
+            {"code": "CS401", "name": "Capstone Project I", "grade": "AA", "credits": 4},
+            {"code": "ELEC401", "name": "Elective Course III", "grade": "AA", "credits": 3},
+            {"code": "ELEC402", "name": "Elective Course IV", "grade": "BA", "credits": 3},
+            {"code": "ELEC403", "name": "Elective Course V", "grade": "AA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2021-2022",
+          "courses": [
+            {"code": "CS402", "name": "Capstone Project II", "grade": "AA", "credits": 4},
+            {"code": "ELEC404", "name": "Elective Course VI", "grade": "AA", "credits": 3},
+            {"code": "ELEC405", "name": "Elective Course VII", "grade": "BA", "credits": 3},
+            {"code": "INTERN401", "name": "Industrial Training", "grade": "EX", "credits": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "20181006",
+      "name": "Gizem Arslan",
+      "department": "CMPE",
+      "start_year": 2018,
+      "curriculum_version": "2018-2020",
+      "status": "graduated",
+      "graduation_year": 2023,
+      "semesters": [
+        {
+          "name": "Fall 2018-2019",
+          "courses": [
+            {"code": "MATH101", "name": "Calculus I", "grade": "CC", "credits": 4},
+            {"code": "PHY101", "name": "Physics I", "grade": "DC", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "CB", "credits": 4},
+            {"code": "ENG101", "name": "English I", "grade": "BB", "credits": 3},
+            {"code": "HIST101", "name": "History of Civilization", "grade": "CC", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2018-2019",
+          "courses": [
+            {"code": "PHY101", "name": "Physics I", "grade": "CC", "credits": 4},
+            {"code": "MATH102", "name": "Calculus II", "grade": "FF", "credits": 4},
+            {"code": "PHY102", "name": "Physics II", "grade": "DC", "credits": 4},
+            {"code": "CS102", "name": "Object Oriented Programming", "grade": "CB", "credits": 4},
+            {"code": "ENG102", "name": "English II", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2019-2020",
+          "courses": [
+            {"code": "MATH102", "name": "Calculus II", "grade": "DC", "credits": 4},
+            {"code": "PHY102", "name": "Physics II", "grade": "CC", "credits": 4},
+            {"code": "PHIL101", "name": "Introduction to Philosophy", "grade": "CB", "credits": 3},
+            {"code": "MATH201", "name": "Linear Algebra", "grade": "FF", "credits": 3},
+            {"code": "TURK201", "name": "Turkish Language I", "grade": "BA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Spring 2019-2020",
+          "courses": [
+            {"code": "MATH102", "name": "Calculus II", "grade": "CC", "credits": 4},
+            {"code": "MATH201", "name": "Linear Algebra", "grade": "DC", "credits": 3},
+            {"code": "CS201", "name": "Data Structures", "grade": "CB", "credits": 4},
+            {"code": "CS203", "name": "Digital Logic Design", "grade": "CC", "credits": 4},
+            {"code": "TURK202", "name": "Turkish Language II", "grade": "BA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Fall 2020-2021",
+          "courses": [
+            {"code": "MATH201", "name": "Linear Algebra", "grade": "CC", "credits": 3},
+            {"code": "MATH203", "name": "Discrete Mathematics", "grade": "CB", "credits": 3},
+            {"code": "CS202", "name": "Algorithms", "grade": "DC", "credits": 4},
+            {"code": "CS204", "name": "Computer Architecture", "grade": "CC", "credits": 4}
+          ]
+        },
+        {
+          "name": "Spring 2020-2021",
+          "courses": [
+            {"code": "CS202", "name": "Algorithms", "grade": "CC", "credits": 4},
+            {"code": "MATH204", "name": "Probability and Statistics", "grade": "CB", "credits": 3},
+            {"code": "EE201", "name": "Circuit Analysis", "grade": "DC", "credits": 4},
+            {"code": "CS301", "name": "Database Systems", "grade": "CB", "credits": 4}
+          ]
+        },
+        {
+          "name": "Fall 2021-2022",
+          "courses": [
+            {"code": "EE201", "name": "Circuit Analysis", "grade": "CC", "credits": 4},
+            {"code": "CS303", "name": "Operating Systems", "grade": "CB", "credits": 4},
+            {"code": "CS305", "name": "Computer Networks", "grade": "CC", "credits": 4},
+            {"code": "ELEC301", "name": "Elective Course I", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2021-2022",
+          "courses": [
+            {"code": "CS302", "name": "Software Engineering", "grade": "CB", "credits": 4},
+            {"code": "CS304", "name": "Compiler Design", "grade": "DC", "credits": 4},
+            {"code": "CS306", "name": "Machine Learning", "grade": "CC", "credits": 4},
+            {"code": "ELEC302", "name": "Elective Course II", "grade": "CB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2022-2023",
+          "courses": [
+            {"code": "CS304", "name": "Compiler Design", "grade": "CC", "credits": 4},
+            {"code": "CS401", "name": "Capstone Project I", "grade": "CB", "credits": 4},
+            {"code": "ELEC401", "name": "Elective Course III", "grade": "CB", "credits": 3},
+            {"code": "ELEC402", "name": "Elective Course IV", "grade": "CC", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2022-2023",
+          "courses": [
+            {"code": "CS402", "name": "Capstone Project II", "grade": "CB", "credits": 4},
+            {"code": "ELEC403", "name": "Elective Course V", "grade": "CB", "credits": 3},
+            {"code": "ELEC404", "name": "Elective Course VI", "grade": "CC", "credits": 3},
+            {"code": "ELEC405", "name": "Elective Course VII", "grade": "CB", "credits": 3},
+            {"code": "INTERN401", "name": "Industrial Training", "grade": "EX", "credits": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "20191001",
+      "name": "Kerem Özdemir",
+      "department": "SE",
+      "start_year": 2019,
+      "curriculum_version": "2019-2021",
+      "status": "graduated",
+      "graduation_year": 2024,
+      "semesters": [
+        {
+          "name": "Fall 2019-2020",
+          "courses": [
+            {"code": "SE100", "name": "Introduction to Software Engineering", "grade": "BB", "credits": 3},
+            {"code": "MAT101", "name": "Calculus I", "grade": "CB", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "BA", "credits": 4},
+            {"code": "ENG101", "name": "English I", "grade": "BB", "credits": 3},
+            {"code": "HIST101", "name": "History of Civilization", "grade": "CB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2019-2020",
+          "courses": [
+            {"code": "SE102", "name": "Software Development Fundamentals", "grade": "BB", "credits": 4},
+            {"code": "MAT102", "name": "Calculus II", "grade": "DC", "credits": 4},
+            {"code": "CS102", "name": "Object Oriented Programming", "grade": "BA", "credits": 4},
+            {"code": "ENG102", "name": "English II", "grade": "BB", "credits": 3},
+            {"code": "PHIL101", "name": "Introduction to Philosophy", "grade": "CB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2020-2021",
+          "courses": [
+            {"code": "MAT102", "name": "Calculus II", "grade": "CC", "credits": 4},
+            {"code": "SE201", "name": "Data Structures and Algorithms", "grade": "CB", "credits": 4},
+            {"code": "SE203", "name": "Software Requirements Analysis", "grade": "BB", "credits": 3},
+            {"code": "MAT201", "name": "Linear Algebra", "grade": "DC", "credits": 3},
+            {"code": "TURK201", "name": "Turkish Language I", "grade": "BA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Spring 2020-2021",
+          "courses": [
+            {"code": "MAT201", "name": "Linear Algebra", "grade": "CC", "credits": 3},
+            {"code": "MAT203", "name": "Discrete Mathematics", "grade": "CB", "credits": 3},
+            {"code": "SE202", "name": "Software Design and Architecture", "grade": "BB", "credits": 4},
+            {"code": "SE204", "name": "Database Systems", "grade": "CB", "credits": 4},
+            {"code": "TURK202", "name": "Turkish Language II", "grade": "BA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Fall 2021-2022",
+          "courses": [
+            {"code": "MAT204", "name": "Statistics and Probability", "grade": "CC", "credits": 3},
+            {"code": "CS204", "name": "Computer Systems Programming", "grade": "CB", "credits": 4},
+            {"code": "SE301", "name": "Software Testing and Quality Assurance", "grade": "BB", "credits": 4},
+            {"code": "SE303", "name": "Web Application Development", "grade": "BA", "credits": 4}
+          ]
+        },
+        {
+          "name": "Spring 2021-2022",
+          "courses": [
+            {"code": "SE305", "name": "Human-Computer Interaction", "grade": "BB", "credits": 3},
+            {"code": "ELEC301", "name": "Technical Elective I", "grade": "CB", "credits": 3},
+            {"code": "SE302", "name": "Software Project Management", "grade": "BA", "credits": 3},
+            {"code": "SE304", "name": "Mobile Application Development", "grade": "BB", "credits": 4}
+          ]
+        },
+        {
+          "name": "Fall 2022-2023",
+          "courses": [
+            {"code": "SE306", "name": "Computer Networks", "grade": "CB", "credits": 4},
+            {"code": "ELEC302", "name": "Technical Elective II", "grade": "CB", "credits": 3},
+            {"code": "SE401", "name": "Senior Project I", "grade": "BA", "credits": 4},
+            {"code": "ELEC401", "name": "Technical Elective III", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2022-2023",
+          "courses": [
+            {"code": "ELEC402", "name": "Technical Elective IV", "grade": "CB", "credits": 3},
+            {"code": "ELEC403", "name": "Free Elective I", "grade": "BB", "credits": 3},
+            {"code": "SE402", "name": "Senior Project II", "grade": "BA", "credits": 4},
+            {"code": "ELEC404", "name": "Technical Elective V", "grade": "CB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2023-2024",
+          "courses": [
+            {"code": "ELEC405", "name": "Free Elective II", "grade": "BB", "credits": 3},
+            {"code": "INTERN401", "name": "Industrial Training", "grade": "EX", "credits": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "20201003",
+      "name": "Deniz Korkmaz",
+      "department": "EE",
+      "start_year": 2020,
+      "curriculum_version": "2020-2022",
+      "status": "graduated",
+      "graduation_year": 2024,
+      "semesters": [
+        {
+          "name": "Fall 2020-2021",
+          "courses": [
+            {"code": "MAT101", "name": "Calculus I", "grade": "BA", "credits": 4},
+            {"code": "PHY101", "name": "Physics I", "grade": "BB", "credits": 4},
+            {"code": "CHM101", "name": "General Chemistry", "grade": "CB", "credits": 4},
+            {"code": "ENG101", "name": "English I", "grade": "AA", "credits": 3},
+            {"code": "SOC101", "name": "Introduction to Sociology", "grade": "BA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2020-2021",
+          "courses": [
+            {"code": "MAT102", "name": "Calculus II", "grade": "BB", "credits": 4},
+            {"code": "PHY102", "name": "Physics II", "grade": "CB", "credits": 4},
+            {"code": "EE102", "name": "Introduction to Electrical Engineering", "grade": "BA", "credits": 3},
+            {"code": "ENG102", "name": "English II", "grade": "AA", "credits": 3},
+            {"code": "PSY101", "name": "Introduction to Psychology", "grade": "BA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2021-2022",
+          "courses": [
+            {"code": "MAT201", "name": "Linear Algebra", "grade": "BB", "credits": 3},
+            {"code": "MAT203", "name": "Differential Equations", "grade": "CB", "credits": 3},
+            {"code": "EE201", "name": "Circuit Analysis I", "grade": "BA", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "BB", "credits": 4},
+            {"code": "TURK201", "name": "Turkish Language I", "grade": "AA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Spring 2021-2022",
+          "courses": [
+            {"code": "EE202", "name": "Circuit Analysis II", "grade": "BA", "credits": 4},
+            {"code": "EE204", "name": "Digital Systems", "grade": "BB", "credits": 4},
+            {"code": "MAT204", "name": "Probability and Statistics", "grade": "CB", "credits": 3},
+            {"code": "PHY301", "name": "Modern Physics", "grade": "BB", "credits": 3},
+            {"code": "TURK202", "name": "Turkish Language II", "grade": "AA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Fall 2022-2023",
+          "courses": [
+            {"code": "EE301", "name": "Electronics I", "grade": "BA", "credits": 4},
+            {"code": "EE303", "name": "Signals and Systems", "grade": "BB", "credits": 4},
+            {"code": "EE305", "name": "Electromagnetic Theory", "grade": "CB", "credits": 4},
+            {"code": "ELEC301", "name": "Area Elective I", "grade": "BA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2022-2023",
+          "courses": [
+            {"code": "EE302", "name": "Electronics II", "grade": "BA", "credits": 4},
+            {"code": "EE304", "name": "Automatic Control", "grade": "BB", "credits": 4},
+            {"code": "EE306", "name": "Electric Power Systems", "grade": "CB", "credits": 4},
+            {"code": "ELEC302", "name": "Area Elective II", "grade": "BA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2023-2024",
+          "courses": [
+            {"code": "EE401", "name": "Engineering Design I", "grade": "AA", "credits": 4},
+            {"code": "ELEC401", "name": "Area Elective III", "grade": "BA", "credits": 3},
+            {"code": "ELEC402", "name": "Area Elective IV", "grade": "BB", "credits": 3},
+            {"code": "ELEC403", "name": "Complementary Elective I", "grade": "BA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2023-2024",
+          "courses": [
+            {"code": "EE402", "name": "Engineering Design II", "grade": "AA", "credits": 4},
+            {"code": "ELEC404", "name": "Area Elective V", "grade": "BA", "credits": 3},
+            {"code": "ELEC405", "name": "Complementary Elective II", "grade": "BB", "credits": 3},
+            {"code": "INTERN401", "name": "Summer Training", "grade": "EX", "credits": 0}
+          ]
+        }
+      ]
+    }
+  ]
+}2020",
+      "status": "graduated",
+      "graduation_year": 2022,
+      "semesters": [
+        {
+          "name": "Fall 2018-2019",
+          "courses": [
+            {"code": "MATH101", "name": "Calculus I", "grade": "BB", "credits": 4},
+            {"code": "PHY101", "name": "Physics I", "grade": "CB", "credits": 4},
+            {"code": "CS101", "name": "Introduction to Programming", "grade": "BA", "credits": 4},
+            {"code": "ENG101", "name": "English I", "grade": "AA", "credits": 3},
+            {"code": "HIST101", "name": "History of Civilization", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2018-2019",
+          "courses": [
+            {"code": "MATH102", "name": "Calculus II", "grade": "CC", "credits": 4},
+            {"code": "PHY102", "name": "Physics II", "grade": "CB", "credits": 4},
+            {"code": "CS102", "name": "Object Oriented Programming", "grade": "BA", "credits": 4},
+            {"code": "ENG102", "name": "English II", "grade": "AA", "credits": 3},
+            {"code": "PHIL101", "name": "Introduction to Philosophy", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2019-2020",
+          "courses": [
+            {"code": "MATH201", "name": "Linear Algebra", "grade": "BB", "credits": 3},
+            {"code": "CS201", "name": "Data Structures", "grade": "BA", "credits": 4},
+            {"code": "CS203", "name": "Digital Logic Design", "grade": "BB", "credits": 4},
+            {"code": "MATH203", "name": "Discrete Mathematics", "grade": "CB", "credits": 3},
+            {"code": "TURK201", "name": "Turkish Language I", "grade": "AA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Spring 2019-2020",
+          "courses": [
+            {"code": "CS202", "name": "Algorithms", "grade": "BA", "credits": 4},
+            {"code": "CS204", "name": "Computer Architecture", "grade": "BB", "credits": 4},
+            {"code": "MATH204", "name": "Probability and Statistics", "grade": "BB", "credits": 3},
+            {"code": "EE201", "name": "Circuit Analysis", "grade": "CB", "credits": 4},
+            {"code": "TURK202", "name": "Turkish Language II", "grade": "AA", "credits": 2}
+          ]
+        },
+        {
+          "name": "Fall 2020-2021",
+          "courses": [
+            {"code": "CS301", "name": "Database Systems", "grade": "BA", "credits": 4},
+            {"code": "CS303", "name": "Operating Systems", "grade": "BB", "credits": 4},
+            {"code": "CS305", "name": "Computer Networks", "grade": "BB", "credits": 4},
+            {"code": "ELEC301", "name": "Elective Course I", "grade": "BA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2020-2021",
+          "courses": [
+            {"code": "CS302", "name": "Software Engineering", "grade": "AA", "credits": 4},
+            {"code": "CS304", "name": "Compiler Design", "grade": "BA", "credits": 4},
+            {"code": "CS306", "name": "Machine Learning", "grade": "BA", "credits": 4},
+            {"code": "ELEC302", "name": "Elective Course II", "grade": "BB", "credits": 3}
+          ]
+        },
+        {
+          "name": "Fall 2021-2022",
+          "courses": [
+            {"code": "CS401", "name": "Capstone Project I", "grade": "AA", "credits": 4},
+            {"code": "ELEC401", "name": "Elective Course III", "grade": "BA", "credits": 3},
+            {"code": "ELEC402", "name": "Elective Course IV", "grade": "BB", "credits": 3},
+            {"code": "ELEC403", "name": "Elective Course V", "grade": "BA", "credits": 3}
+          ]
+        },
+        {
+          "name": "Spring 2021-2022",
+          "courses": [
+            {"code": "CS402", "name": "Capstone Project II", "grade": "AA", "credits": 4},
+            {"code": "ELEC404", "name": "Elective Course VI", "grade": "BA", "credits": 3},
+            {"code": "ELEC405", "name": "Elective Course VII", "grade": "BB", "credits": 3},
+            {"code": "INTERN401", "name": "Industrial Training", "grade": "EX", "credits": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "student_id": "20181002",
+      "name": "Fatma Öztürk",
+      "department": "CMPE",
+      "start_year": 2018,
+      "curriculum_version": "2018-
