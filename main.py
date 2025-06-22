@@ -9,7 +9,7 @@ GRADINGS = {
     "DC": 1.5, "DD": 1.0, "FD": 0.5, "FF": 0.0, "NA": 0.0,
 }
 
-# Will be used to exclude certain grades from GPA/CGPA calculations
+# Will be used later to exclude certain grades from GPA/CGPA calculations
 EXCLUDED_GRADES = {"EX", "W", "I"}
 
 # Load data from our database file
@@ -29,7 +29,7 @@ def calculate_gpa(semester_courses):
 
         # Convert letter grade to point grade
         points = GRADINGS.get(grade, 0)
-        # 0 is for any unrecognized grade
+        # Any unrecognized grade will be 0
 
         credits = course["credits"]
         total_points += points * credits
@@ -69,22 +69,22 @@ def calculate_cgpa(semesters):
 
         # Convert letter grade to point grade
         points = GRADINGS.get(grade, 0)
-        # 0 is for any unrecognized grade
+        # Any unrecognized grade will be 0
 
         total_points += points * credits
         total_credits += credits
 
-    # Final CGPA calculation
+    # CGPA is calculated here
     if total_credits > 0:
         cgpa = total_points / total_credits
-        return round(cgpa, 2)
+        return round(cgpa, 2) #we want two decimals
     else:
         return 0.0
 
 def generate_pdf(student, gpa_data, cgpa, output_dir="transcripts"):
     os.makedirs(output_dir, exist_ok=True)
 
-    # Create a PDF document
+    # Create the PDF document
     pdf = FPDF()
     pdf.add_page()
     pdf.set_font("Arial", size=12)
