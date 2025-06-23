@@ -141,7 +141,7 @@ def main():
             print("Student not found.")
 
     elif choice == "2":
-        dept_code = input("Enter department code (e.g., CMPE): ").upper()
+        dept_code = input("Enter department code (CNG, SNG, EEE): ").upper()
         students = [s for s in data["students"] if s["department"] == dept_code] # List comprehension to filter students by department
         if not students:
             print("No students found in that department.")
